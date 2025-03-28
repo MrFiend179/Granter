@@ -2,6 +2,8 @@
 
 A **powerful and flexible granting system** for **Minecraft servers** that integrates with **LuckPerms** and **PlaceholderAPI**. This plugin allows players with specific permission to grant ranks to other players.
 
+![image](https://firebasestorage.googleapis.com/v0/b/flubel-a1b4b.appspot.com/o/images%2FX%20(4).png?alt=media&token=82596528-8a2d-4c1f-ba7a-04dc8458b63a)
+
 ---
 
 ## Features
