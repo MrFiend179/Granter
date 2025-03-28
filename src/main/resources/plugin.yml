@@ -1,0 +1,22 @@
+name: Granter
+version: '${project.version}'
+main: com.flubel.granter.Granter
+api-version: '1.21'
+commands:
+  grant:
+    description: Grants a rank to a player.
+    usage: /grant <player_name> <rank_name>
+    permission: granter.grant
+    permission-message: You do not have permission to use this command.
+  grantreset:
+    description: Reset grant data for a player.
+    usage: /grantreset <player_name>
+    permission: granter.grant.reset
+  grantreload:
+    description: Reloads the data file for the plugin.
+    usage: /grantreload
+    permission: granter.grant.reload
+  grantinfo:
+    description: Shows the player info regarding his grants.
+    usage: /grantinfo
+    permission: granter.grant.info

@@ -1,0 +1,57 @@
+# ===================================================================
+# Granter Plugin Configuration, Made by Flubel
+# ===================================================================
+# This configuration file allows you to set up ranks, their prefixes, 
+# limits for granting, and messages that appear when a rank is granted.
+# ===================================================================
+
+ranks:
+  # Default demo ranks, you can add your own ranks, prefixes, and limits.
+  # Each rank has a unique prefix and granting limits.
+  # Limits work with the permission node: granter.grant.limit<limit_number> (limit1, limit2)
+  # Example: For limit1, the permission would be granter.grant.limit1
+
+  flux:
+    prefix: '&b[FLUX]'  # Prefix that appears before player names
+    limits:
+      limit1: 4       # Max number of times this rank can grant permission level 1
+      limit2: 2       # Max number of times this rank can grant permission level 2
+      limit3: 1       # Max number of times this rank can grant permission level 3
+
+  flux+:
+    prefix: '&d[FLUX+]'
+    limits:
+      limit1: 4
+      limit2: 2
+      limit3: 1
+
+  vortex:
+    prefix: '&e[VORTEX]'
+    limits:
+      limit1: 2
+      limit2: 1
+      limit3: 0  # This rank cannot grant level 3 permissions
+
+# ===================================================================
+# Grant Messages
+# ===================================================================
+# These messages are broadcasted to the server when a rank is granted.
+# Use placeholders to dynamically insert player names and ranks.
+# - {granter_player} = Player granting the rank
+# - {granted_player} = Player receiving the rank
+# - {rank} = Rank being granted
+messages:
+  - " "  # Optional Space
+  - "&ePlayer &6&l{granter_player}&e granted {rank} &eto &6&l{granted_player}"
+  - " "  # Optional Space
+
+# ===================================================================
+# Message Decoration
+# ===================================================================
+# This decoration appears above and below the broadcasted messages. e.g. @, =, ~, +. *, $
+# It can be adjusted to fit different symbols and widths.
+decor: "@"
+
+# Number of decoration characters to appear in a single row.
+# Recommended values: 45 for '@', 46 for '=' (adjust as needed).
+decor_length: 45
